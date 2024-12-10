@@ -3525,7 +3525,7 @@ class _LanguageTranslatorPageState extends State<LanguageTranslatorPage> {
                   },
                 ),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 20),
               Center(
                   child: DropdownButton<String>(
                 alignment: Alignment.center,
@@ -3543,7 +3543,7 @@ class _LanguageTranslatorPageState extends State<LanguageTranslatorPage> {
                   });
                 },
               )),
-              const SizedBox(height: 60),
+              const SizedBox(height: 20),
 
               // Input field
               TextField(
@@ -3554,7 +3554,7 @@ class _LanguageTranslatorPageState extends State<LanguageTranslatorPage> {
                 ),
               ),
 
-              const SizedBox(height: 40),
+              const SizedBox(height: 20),
 
               // Translation button
               Center(
@@ -3595,7 +3595,7 @@ class _LanguageTranslatorPageState extends State<LanguageTranslatorPage> {
 
               // Display translated text
               if (_translatedText != null) ...[
-                const SizedBox(height: 40),
+                const SizedBox(height: 20),
                 Text(
                   'Translation: $_translatedText',
                   style: const TextStyle(
