@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class LanguageTranslatorPage extends StatefulWidget {
-  const LanguageTranslatorPage({Key? key}) : super(key: key);
+  const LanguageTranslatorPage({super.key});
 
   @override
   State<LanguageTranslatorPage> createState() => _LanguageTranslatorPageState();
@@ -117,7 +117,7 @@ class _LanguageTranslatorPageState extends State<LanguageTranslatorPage> {
       'Spanish': 'Gracias',
       'French': 'Merci',
       'Arabic': 'شكرا',
-      'Japanese': 'ｂ'
+      'Japanese': 'ありがとう'
     },
     'gracias': {
       'English': 'Thank you',
@@ -3421,6 +3421,27 @@ class _LanguageTranslatorPageState extends State<LanguageTranslatorPage> {
       'Arabic': 'بارد',
       'Japanese': '寒い'
     },
+
+    'Tree': {
+      'English': 'Tree',
+      'English': 'tree',
+      'Spanish': 'Arbol',
+      'Spanish': 'tree',
+      'French': 'Arbre',
+      'French': 'arbre',
+      'Arabic': 'شجرة',
+      'Japanese': '木',
+    },
+    'tree': {
+      'English': 'Tree',
+      'English': 'tree',
+      'Spanish': 'Arbol',
+      'Spanish': 'tree',
+      'French': 'Arbre',
+      'French': 'arbre',
+      'Arabic': 'شجرة',
+      'Japanese': '木',
+    },
   };
 
   @override
@@ -3473,7 +3494,7 @@ class _LanguageTranslatorPageState extends State<LanguageTranslatorPage> {
         ],
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: NetworkImage('https://your-image-url.com/image.jpg'),
             fit:
@@ -3609,7 +3630,7 @@ class _LanguageTranslatorPageState extends State<LanguageTranslatorPage> {
 class TranslatedListView extends StatelessWidget {
   final List<String> phrases;
 
-  const TranslatedListView({Key? key, required this.phrases}) : super(key: key);
+  const TranslatedListView({super.key, required this.phrases});
 
   @override
   Widget build(BuildContext context) {
